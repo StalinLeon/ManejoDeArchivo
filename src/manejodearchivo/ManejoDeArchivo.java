@@ -18,17 +18,15 @@ public class ManejoDeArchivo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-//        File archivo = new File("C:\\Users\\USUARIO\\Documents\\NetBeansProjects\\ManejoDeArchivo\\espedientes\\archivo.txt");
-//        System.out.println("Existe: " + archivo.exists());
-//        System.out.println("¿Se puede leer?: " + archivo.canRead());
-//        System.out.println("Se puede escribir?: " + archivo.canWrite());
+        Mascota m1 = new Mascota("1234567892", "Stalin");
+        Mascota m2 = new Mascota("8545622542", "Maria");
+        Mascota m3 = new Mascota("0125125582", "Carlo");
+
         ControlesTXT tXT = new ControlesTXT();
-        tXT.CrearArchivoConFileWriteAndBuffereWrite();
-        tXT.CrearArchivoConPrintWriter();
-        tXT.CrearArchivoConPrintWriterPrint();
-        tXT.CrearArchivoConPrintWriterPrintln();
-        
+        tXT.AgregarMascota(m1.getCedula(), m1.getNombre());
+        tXT.AgregarMascota(m2.getCedula(), m2.getNombre());
+        tXT.AgregarMascota(m3.getCedula(), m3.getNombre());
+  
     }
     
     

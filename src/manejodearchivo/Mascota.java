@@ -21,6 +21,11 @@ public class Mascota {
     public Mascota() {
     }
 
+    public Mascota(String Cedula, String Nombre) {
+        this.Cedula = Cedula;
+        this.Nombre = Nombre;        
+    }
+
     public Mascota(String CodigoMascota, String Nombre, String Raza, String FechaNacimiento, String Color, String Cedula, String Duenio) {
         this.CodigoMascota = CodigoMascota;
         this.Nombre = Nombre;
