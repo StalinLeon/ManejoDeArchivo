@@ -18,12 +18,14 @@ public class Mascota {
     private String Cedula;
     private String Duenio;
 
+    
     public Mascota() {
     }
 
     public Mascota(String Cedula, String Nombre) {
         this.Cedula = Cedula;
-        this.Nombre = Nombre;        
+
+        this.Nombre = Nombre;
     }
 
     public Mascota(String CodigoMascota, String Nombre, String Raza, String FechaNacimiento, String Color, String Cedula, String Duenio) {
