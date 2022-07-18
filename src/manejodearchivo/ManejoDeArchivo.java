@@ -21,7 +21,7 @@ public class ManejoDeArchivo {
 
         ControlesTXT tXT = new ControlesTXT();
 
-        String datoBuscar = "0100579630000";
+        String datoBuscar = "0101050649001";
         String cadena;
         cadena = tXT.Buscar(datoBuscar, "rimpe.txt");
         if(cadena == ""){
