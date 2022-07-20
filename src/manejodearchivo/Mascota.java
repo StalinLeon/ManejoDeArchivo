@@ -10,89 +10,77 @@ package manejodearchivo;
  * @author USUARIO
  */
 public class Mascota {
-    private String CodigoMascota;
-    private String Nombre;
-    private String Raza;
-    private String FechaNacimiento;
-    private String Color;
-    private String Cedula;
-    private String Duenio;
+    private String codigoMascota;
+    private String nombre;
+    private String raza;
+    private String fechaNacimiento;
+    private String fechaExaminacion;
+    private String color;
 
-    
     public Mascota() {
     }
 
-    public Mascota(String Cedula, String Nombre) {
-        this.Cedula = Cedula;
-
-        this.Nombre = Nombre;
+    public Mascota(String codigoMascota, String nombre, String raza, String fechaNacimiento, String fechaExaminacion, String color) {
+        this.codigoMascota = codigoMascota;
+        this.nombre = nombre;
+        this.raza = raza;
+        this.fechaNacimiento = fechaNacimiento;
+        this.fechaExaminacion = fechaExaminacion;
+        this.color = color;
     }
 
-    public Mascota(String CodigoMascota, String Nombre, String Raza, String FechaNacimiento, String Color, String Cedula, String Duenio) {
-        this.CodigoMascota = CodigoMascota;
-        this.Nombre = Nombre;
-        this.Raza = Raza;
-        this.FechaNacimiento = FechaNacimiento;
-        this.Color = Color;
-        this.Cedula = Cedula;
-        this.Duenio = Duenio;
+    public String getCodigoMascota() {
+        return codigoMascota;
     }
 
-    public String getCodigo() {
-        return CodigoMascota;
-    }
-
-    public void setCodigo(String Codigo) {
-        this.CodigoMascota = Codigo;
+    public void setCodigoMascota(String codigoMascota) {
+        this.codigoMascota = codigoMascota;
     }
 
     public String getNombre() {
-        return Nombre;
+        return nombre;
     }
 
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getRaza() {
-        return Raza;
+        return raza;
     }
 
-    public void setRaza(String Raza) {
-        this.Raza = Raza;
+    public void setRaza(String raza) {
+        this.raza = raza;
     }
 
     public String getFechaNacimiento() {
-        return FechaNacimiento;
+        return fechaNacimiento;
     }
 
-    public void setFechaNacimiento(String FechaNacimiento) {
-        this.FechaNacimiento = FechaNacimiento;
+    public void setFechaNacimiento(String fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    public String getFechaExaminacion() {
+        return fechaExaminacion;
+    }
+
+    public void setFechaExaminacion(String fechaExaminacion) {
+        this.fechaExaminacion = fechaExaminacion;
     }
 
     public String getColor() {
-        return Color;
+        return color;
     }
 
-    public void setColor(String Color) {
-        this.Color = Color;
+    public void setColor(String color) {
+        this.color = color;
     }
+    
+    
+    
 
-    public String getCedula() {
-        return Cedula;
-    }
-
-    public void setCedula(String Cedula) {
-        this.Cedula = Cedula;
-    }
-
-    public String getDuenio() {
-        return Duenio;
-    }
-
-    public void setDuenio(String Duenio) {
-        this.Duenio = Duenio;
-    }
+    
    
     
     
